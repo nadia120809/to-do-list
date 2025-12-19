@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>   /* Style dasar */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e4bcde;
+    text-align: center;
+    padding: 30px;
+    font-size: 20px; /* ukuran font dasar lebih besar */
+}
+
+h1 {
+    color: #333;
+    font-size: 32px; /* judul lebih besar */
+}
+
+/* Input dan tombol tambah */
+#input-tugas {
+    padding: 12px;
+    width: 300px;
+    font-size: 18px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+}
+
+#tombol-tambah {
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff5ddf;
+    color: white;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: 0.3s;
+}
+
+#tombol-tambah:hover {
+    background-color: #ff3dd0;
+}
+
+/* Daftar tugas */
+#daftar-tugas {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+#daftar-tugas li {
+    background: white;
+    padding: 16px;
+    margin: 10px auto;
+    width: 400px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 3px 7px rgba(0,0,0,0.15);
+}
+
+/* Tombol hapus */
+#daftar-tugas li button {
+    background-color: #dc3545;
+    border: none;
+    color: white;
+    padding: 8px 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#daftar-tugas li button:hover {
+    background-color: #c82333;
+}</style>
+  
+</head>
+<body>
+    <h1>My-To-Do List</h1>
+    <input type="text" id="input-tugas" placeholder="Tulis tugas baru...">
+    <button id="tombol-tambah">Tambah</button>
+    <ul id="daftar-tugas">
+        <!-- Tugas baru akan ditambahkan di sini -->
+    </ul>
+    <script src="/js/todolist.js"></script>
+</body>
+</html>
